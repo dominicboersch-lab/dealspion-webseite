@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Preisspion findet täglich handverlesene Angebote, Coupons, Rabatte und Preisfehler.">
+  <title>Preisspion – Die besten Deals jeden Tag</title>
+  <link rel="icon" href="assets/preisspion-logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="deal-card" aria-labelledby="headline">
+      <div class="card-glow" aria-hidden="true"></div>
+
+      <img
+        class="logo"
+        src="assets/preisspion-logo.jpeg"
+        alt="Preisspion Logo"
+        width="260"
+        height="260"
+      >
+
+      <p class="eyebrow">🕵️ Wir spionieren Preise.<br>Du sparst Geld. 💰</p>
+
+      <h1 id="headline">
+        Die besten Deals.<br>
+        <span>Jeden Tag. 👀</span>
+      </h1>
+
+      <p class="intro">
+        🔍 Tritt kostenlos dem Preisspion WhatsApp-Kanal bei
+        und erhalte täglich neue Angebote, Coupons und
+        Preisfehler direkt aufs Handy! 📱
+      </p>
+
+      <!-- HIER den echten Link zu deinem WhatsApp-Kanal einsetzen -->
+      <a
+        class="cta"
+        href="DEIN-WHATSAPP-KANAL-LINK"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="whatsapp-button"
+      >
+        <span class="whatsapp-icon" aria-hidden="true">☎</span>
+        <span>Jetzt kostenlos<br>beitreten</span>
+      </a>
+
+      <ul class="benefits">
+        <li><span aria-hidden="true">💎</span> Handverlesene Funde</li>
+        <li><span aria-hidden="true">🎟️</span> Coupons &amp; Rabatte</li>
+        <li><span aria-hidden="true">⚡</span> Preisfehler &amp; Top-Deals</li>
+      </ul>
+
+      <p class="disclosure">🛡️ Anzeige | Einige Links können Partnerlinks sein.</p>
+
+      <nav class="legal-links" aria-label="Rechtliche Informationen">
+        <a href="impressum.html">Impressum</a>
+        <span>•</span>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+
+      <p class="domain">🌐 preisspion.de</p>
+    </section>
+  </main>
+
+  <script>
+    const whatsappButton = document.getElementById("whatsapp-button");
+
+    whatsappButton.addEventListener("click", () => {
+      if (typeof gtag === "function") {
+        gtag("event", "whatsapp_click", {
+          event_category: "engagement",
+          event_label: "preisspion_whatsapp_channel"
+        });
+      }
+    });
+  </script>
+</body>
+</html>
